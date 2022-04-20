@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Survey Form Ver 1</title>
+</head>
+<body>
+  
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">NewElec 3 Phase Motor Protection Survey</h1>
+      <p id="description" class="description text-center">
+        Thank you for taking the time to help us understand motor propection preferences.
+      </p>
+      
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your name"
+          required
+        />
+      </header>
+    
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+            >
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="18"
+            max="75"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+
+        <div class="form-position">
+          <p id="position_brand">Prefered 3 phase motor protection brand?</p>
+          <select name="brand" class="form-control" required>
+            <option disabled selected value>Prefered brand?</option>
+            <option value="Allen Bradley">Allen Bradley</option>
+            <option value="Cutler Hammer">Cutler Hammer</option>
+            <option value="Siemens">Siemens</option>
+            <option value="General Electric">General Electric</option>
+            <option value="NewElec">NewElec</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <br>
+
+        <div class="form-brand">
+          <p id="recommend">Would you ever recommend NewElec relays to a friend?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Definitely</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not sure</label
+          >
+        </div>
+      
+      <div class="form-position">
+        <p id="dropdown">Which option best describes your position?</p>
+        <select name="role" class="form-control" required>
+          <option disabled selected value>Select current role</option>
+          <option value="Electrician">Electrician</option>
+          <option value="Electrical Engineer">Electrical Engineer</option>
+          <option value="Consilutant">Consultant</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+          </select>
+      </div>
+      <br>
+           
+      <div class="most-like">
+        <p id="special-features">
+          Which SPECIAL motor protection feature would you consider essential?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="Communication to a PLC">Communication to a PLC</option>
+          <option value="Expandable modules">Expandable modules</option>
+          <option value="Faults and Events recording">Faults and Events recording</option>
+          <option value="Panel Mounted User Interface">Panel Mounted User Interface</option>
+        </select>
+      </div>
+      <br>
+  
+      <div class="form-group">
+        <p id="improvements">
+          What would you like to see improved?
+          <span class="clue">(Check all that apply)</span>
+        </p>
+  
+        <label
+          ><input
+            name="prefer"
+            value="Mobile Comms"
+            type="checkbox"
+            class="input-checkbox"
+          />Mobile Comms</label
+        >
+        <label>
+          <input
+            name="prefer"
+            value="Earth leakage"
+            type="checkbox"
+            class="input-checkbox"
+          />Earth leakage</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Password Protection"
+            type="checkbox"
+            class="input-checkbox"
+          />Password Protection</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Customer Service"
+            type="checkbox"
+            class="input-checkbox"
+          />Customer Service</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Product Training"
+            type="checkbox"
+            class="input-checkbox"
+          />Product Training</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Hard Copy Manuals"
+            type="checkbox"
+            class="input-checkbox"
+          />Hard Copy Manuals</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="On site recordings"
+            type="checkbox"
+            class="input-checkbox"
+          />On site recordings</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Better repair guarantee"
+            type="checkbox"
+            class="input-checkbox"
+          />Better repair guarantee</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Improved delivery times"
+            type="checkbox"
+            class="input-checkbox"
+          />Improved delivery times</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Internet Training Videos"
+            type="checkbox"
+            class="input-checkbox"
+          />Internet Training Videos</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="On Site Training"
+            type="checkbox"
+            class="input-checkbox"
+          />On Site Training</label
+        >
+      </div>
+
+      <div class="form-group">
+        <p id="suggestions">Any comments or suggestions?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+  
